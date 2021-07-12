@@ -88,8 +88,7 @@ const App = () => {
                     <button className="front__btn" onClick={() => { menuRender() }}>Menu</button>
                     <button className="front__btn" onClick={() => { TourRender() }}>Tours</button>
                     <button className="front__btn" onClick={() => { reviewRender() }}>Reviews</button>
-                    <button className="front__btn" onClick={() => { reviewRender() }}>Stocks</button>
-                    {/* <button className="front__btn" onClick={() => { menuRender() }}>CockTails</button> */}
+                    {/* <button className="front__btn" onClick={() => { reviewRender() }}>Stocks</button> */}
                 </div>
             </div>
             <MenuApp></MenuApp>
