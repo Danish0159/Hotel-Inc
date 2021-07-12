@@ -1,0 +1,463 @@
+/*
+============================================================
+  ============================================================
+Global Styling
+  ============================================================
+  ============================================================
+  */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: hsl(210, 36%, 96%);
+  color: hsl(209, 61%, 16%);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: hsl(210, 22%, 49%);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/*
+============================================================
+  ============================================================
+  Front-Page
+  ============================================================
+  ============================================================
+  */
+.front__main {
+  width: 90vw;
+  max-width: 620px;
+  margin: 5rem auto;
+}
+.front__title {
+  text-align: center;
+}
+
+.front__container button:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.front__btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.front__btn {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  padding: 0.375rem 0.75rem;
+  border: none;
+
+  background-color: hsl(205, 78%, 60%);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+/*
+============================================================
+  ============================================================
+  Tours-Page
+  ============================================================
+  ============================================================
+  */
+
+/*
+=============== 
+Tours
+===============
+*/
+.tour__main {
+  width: 90vw;
+  max-width: 620px;
+  margin: 5rem auto;
+}
+.tour__loading {
+  text-align: center;
+}
+.tour__title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.tour__underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: hsl(210, 22%, 49%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.single-tour {
+  background: #fff;
+  border-radius: 0.25rem;
+  margin: 2rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+.single-tour:hover {
+  box-shadow: var(0 5px 15px rgba(0, 0, 0, 0.2));
+}
+.single-tour img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+.tour-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.tour-info h4 {
+  margin-bottom: 0;
+}
+.single-tour button {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  color: hsl(210, 22%, 49%);
+  font-size: 1rem;
+  cursor: pointer;
+  padding-left: 0.25rem;
+}
+.tour-price {
+  color: hsl(210, 22%, 49%);
+  background: hsl(210, 36%, 96%);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25;
+}
+.single-tour footer {
+  padding: 1.5rem 2rem;
+}
+.single-tour .delete-btn {
+  display: block;
+  width: 200px;
+  margin: 1rem auto 0 auto;
+  color: hsl(360, 67%, 44%);
+  letter-spacing: 0.1rem;
+  background: transparent;
+  border: 1px solid hsl(360, 67%, 44%);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+/*
+============================================================
+  ============================================================
+  Reviews-Page
+  ============================================================
+  ============================================================
+  */
+
+/* section */
+.review__section {
+  width: 90vw;
+  margin: 5rem auto;
+  max-width: 1170;
+}
+
+@media screen and (min-width: 992px) {
+  .review__section {
+    width: 95vw;
+  }
+}
+/*
+=============== 
+Slider
+===============
+*/
+.review__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.review__title h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.review__title span {
+  font-size: 0.85em;
+  color: hsl(21, 62%, 45%);
+  margin-right: 1rem;
+  font-weight: 700;
+}
+.review__section-center {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 80vw;
+  height: 450px;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.review__person-img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid hsl(210, 22%, 49%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+article h4 {
+  text-transform: uppercase;
+  color: hsl(21, 62%, 45%);
+  margin-bottom: 0.25rem;
+}
+.review__title {
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  color: hsl(209, 34%, 30%);
+}
+.review__text {
+  max-width: 35em;
+  margin: 0 auto;
+  margin-top: 2rem;
+  line-height: 2;
+  color: hsl(210, 22%, 49%);
+}
+.review__icon {
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: hsl(21, 62%, 45%);
+}
+.prev,
+.next {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  background: hsl(210, 22%, 49%);
+  color: #fff;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: grid;
+  place-items: center;
+  border-color: transparent;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.prev:hover,
+.next:hover {
+  background: hsl(21, 62%, 45%);
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+@media (min-width: 800px) {
+  .text {
+    max-width: 45em;
+  }
+  .prev,
+  .next {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+article.lastSlide {
+  transform: translateX(-100%);
+}
+article.nextSlide {
+  transform: translateX(100%);
+}
+
+/*
+============================================================
+  ============================================================
+  Menu-Page
+  ============================================================
+  ============================================================
+  */
+
+/* section */
+.menu__section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .menu__section {
+    width: 95vw;
+  }
+}
+
+/*
+=============== 
+Menu
+===============
+*/
+
+.menu__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.menu__underline {
+  width: 5rem;
+  height: 0.25rem;
+  background: #c59d5f;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu__btn-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.menu__filter-btn {
+  background: transparent;
+  border-color: transparent;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  padding: 0.375rem 0.75rem;
+  color: #c59d5f;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  border-radius: 0.25rem;
+}
+.menu__filter-btn:hover {
+  background: #c59d5f;
+  color: #fff;
+}
+.menu__section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+.menu__menu-item {
+  display: grid;
+  gap: 1rem 2rem;
+  max-width: 25rem;
+}
+.menu__photo {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border: 0.25rem solid #c59d5f;
+  border-radius: 0.25rem;
+  display: block;
+}
+.menu__item-info header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px dotted hsl(210, 22%, 49%);
+}
+.menu__item-info h4 {
+  margin-bottom: 0.5rem;
+}
+.menu__price {
+  color: #c59d5f;
+}
+.menu__item-text {
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__menu-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+  .menu__photo {
+    height: 175px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .menu__photo {
+    height: 150px;
+  }
+}
